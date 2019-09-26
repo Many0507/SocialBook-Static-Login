@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Poppins:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif; }
+
+h1 {
+  margin: 0; }
+
+.container {
+  width: 75%;
+  margin: 0 auto; }
+
+.app-name {
+  font-family: "Pacifico", cursive;
+  color: #16a085;
+  font-weight: 700;
+  letter-spacing: .2rem; }
+
+.login-header {
+  padding: 1.5rem 0;
+  background: #ecf0f1;
+  border-bottom: 2px solid #cfd9db; }
+  .login-header__title {
+    color: #2d3436;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    text-align: center;
+    line-height: 2.5rem;
+    opacity: .8; }
+
+.background-image {
+  background-image: url(../img/Dark-Social.png);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  opacity: .5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+
+.main-content {
+  position: relative;
+  background: linear-gradient(to bottom, #2193b0, #6dd5ed);
+  padding: 1rem 0;
+  min-height: calc(100vh - 133px - 50px);
+  z-index: 0; }
+  @media screen and (min-width: 530px) {
+    .main-content {
+      min-height: calc(100vh - 93px - 50px); } }
+  @media screen and (min-width: 960px) {
+    .main-content {
+      display: grid;
+      grid-template-columns: 3fr 3fr; } }
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  z-index: 2; }
+  .form__error-message {
+    font-size: 1rem;
+    font-style: italic;
+    margin: 1rem 0 0;
+    text-align: center;
+    letter-spacing: .1rem;
+    color: #e74c3c; }
+  .form__title {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    color: #2d3436;
+    text-align: center;
+    opacity: .7; }
+
+.login-form {
+  padding: 1.5rem;
+  max-width: 360px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 1px 1px 3px #000;
+  opacity: .9;
+  z-index: 9999; }
+  .login-form__box {
+    margin: 1.5rem 0; }
+  .login-form__label {
+    color: #2d3436;
+    font-size: 1.15rem;
+    letter-spacing: .2rem;
+    transition: ease-in color .3s; }
+    .login-form__label--focus {
+      color: #16a085; }
+  .login-form__input {
+    width: 100%;
+    margin-top: .6rem;
+    padding: .3rem .4rem;
+    font-size: 1rem;
+    color: #2d3436;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid #adadad;
+    transition: ease border-bottom .5s; }
+    .login-form__input--focus {
+      border-bottom: 2px solid #16a085; }
+
+.btn {
+  color: #ecf0f1;
+  width: 100%;
+  font-size: 1.15rem;
+  margin-top: .5rem;
+  padding: 1rem .5rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #000;
+  transition: ease background-color .5s;
+  cursor: pointer; }
+  .btn--login {
+    background-color: #16a085; }
+    .btn--login:hover {
+      background-color: #19b698; }
+  .btn--signup {
+    background-color: #2193b0; }
+    .btn--signup:hover {
+      background-color: #25a5c5; }
+  .btn--close {
+    background-color: #ea6153; }
+    .btn--close:hover {
+      background-color: #ed7669; }
+
+.signup-text {
+  text-align: center;
+  margin: 1.2rem 0 .5rem 0;
+  padding-top: .5rem; }
+
+.picture {
+  z-index: 2;
+  display: none; }
+  @media screen and (min-width: 960px) {
+    .picture {
+      display: flex;
+      align-items: flex-end;
+      margin: 10rem 0; }
+      .picture__title {
+        font-family: "Pacifico", cursive;
+        letter-spacing: .4rem;
+        color: #ecf0f1;
+        font-size: 2.5rem;
+        text-shadow: 1px 1px 2px #2d3436;
+        line-height: 3rem;
+        opacity: .9; } }
+
+.signup {
+  position: absolute;
+  top: 0vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(45, 52, 54, 0.8);
+  z-index: 99;
+  transition: ease-in all .5s; }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background: #ecf0f1;
+  border-top: 2px solid #cfd9db; }
+  .footer__text {
+    text-align: center;
+    font-size: 1rem; }

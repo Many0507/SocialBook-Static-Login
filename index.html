@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Socialbook - Login</title>
+     <script src="https://kit.fontawesome.com/d7496a38d5.js" crossorigin="anonymous"></script>
+     <!-- css -->
+     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+     <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+     <section class="signup" id="signup">
+          <form class="signup-form" id="signin-form">
+               <h2 class="signup__title">Registrate</h2>
+               <p class="form__error-message">Mensaje de error, si es que existe.</p>
+               <div class="signup-form__box">
+                    <label for="Username" class="signup-form__label" id="username-label">Username:</label>
+                    <input type="text" id="Username" class="signup-form__input">
+               </div>
+               <div class="signup-form__box">
+                    <label for="Email-S" class="signup-form__label" id="email-label">Email:</label>
+                    <input type="text" id="Email-S" class="signup-form__input">
+               </div>
+               <div class="signup-form__box">
+                    <label for="Password-S" class="signup-form__label" id="password-label">Contraseña:</label>
+                    <input type="password" id="Password-S" class="signup-form__input">
+               </div>
+               <button type="submit" class="btn--signup btn">Registrarse</button>
+               <button class="btn--close btn">Cerrar</button>
+          </form>
+     </section>
+     <header class="login-header">
+          <div class="container">
+               <h1 class="login-header__title">Bienvenido a <span class="app-name">Socialbook.</span></h1>
+          </div>
+     </header>
+     <main>
+          <div class="main-content">
+               <div class="background-image"></div>
+               <section class="form">
+                    <form class="login-form">
+                         <h2 class="form__title">Inicia sesion</h2>
+                         <!-- <p class="form__error-message">Mensaje de error, si es que existe.</p> -->
+                         <div class="login-form__box">
+                              <label for="username" class="login-form__label" id="username-label">Email:</label>
+                              <input type="text" id="username" class="login-form__input">
+                         </div>
+                         <div class="login-form__box">
+                              <label for="password" class="login-form__label" id="password-label">Contraseña:</label>
+                              <input type="password" id="password" class="login-form__input">
+                         </div>
+                         <button type="submit" class="btn--login btn">Iniciar sesion</button>
+                         <p class="signup-text">¿No tienes una cuenta?</p>
+                         <button class="btn--signup btn" id="sig">Registrate</button>
+                    </form>
+               </section>
+               <section class="picture">
+                    <h3 class="picture__title">Comparte, Chatea, Expresate.</h3>
+               </section>
+          </div>
+     </main>
+     <footer class="footer">
+          <div class="container">
+               <p class="footer__text"><span class="app-name">Socialbook.</span> &copy; 2019 - todos los derechos reservados.</p>
+          </div>
+     </footer>
+     <script src="./js/main.js"></script>
+</body>
+</html>
